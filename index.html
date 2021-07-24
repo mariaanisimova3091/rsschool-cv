@@ -11,7 +11,7 @@
     <div class="container">
 			<figure>
 				<figcaption></figcaption>
-      <img src="./photo.jpg" alt="me" />
+      <img src="./photo.jpg" alt="owner photo" />
 		</figcaption>
 		</figure>
       <h1>Maria Anisimova</h1>
@@ -37,18 +37,41 @@
       </ul>
 
       <h2>Code examples:</h2>
-			<details>Redux-thunk</details>
-      <p><code>
-        function createThunkMiddleware(extraArgument) { <br>
-					return ({ dispatch, getState }) => (next) => (action) => {<br>
-						if (typeof action === 'function') {<br>
-							return action(dispatch, getState, extraArgument);<br>
-						}<br>
-				
-						return next(action);<br>
-					};<br>
-				}<br>
-      </p>
+			<figure>
+				<figcaption>Server with Express</figcaption>
+				<pre>
+					<code>
+  const express = require('express')
+  const app = express()
+  const port = 3000
+
+  app.get('/', (req, res) => {
+	  res.send('Hello World!')
+  })
+
+  app.listen(port, () => {
+	  console.log(`Example app listening at http://localhost:${port}`)
+  })			
+					</code>
+				</pre>
+			</figure>
+
+			<figure>
+				<figcaption>Redux-thunk</figcaption>
+				<pre>
+					<code>
+  function createThunkMiddleware(args) {
+    return ({ dispatch, getState }) => next => action => {
+      if (typeof action === 'function') {
+        return action(dispatch, getState, args);
+      }
+
+      return next(action);	
+    };
+  }
+					</code>
+				</pre>
+			</figure>
 
       <h2>Work experience:</h2>
       <p>no.</p>
@@ -62,5 +85,13 @@
       <h2>English level:</h2>
       <p>B1 (Intermediate)</p>
     </div>
+		<footer>
+			<div class='rss-logo'></div>
+			<a href="https://rs.school/js/">Link to course Rolling Scopes School </a>
+			<a href="https://github.com/mariaanisimova3091"> My github </a>
+			<b>Creation date:2021 </b>
+		</footer>
  </body>
+ 
+
 </html>

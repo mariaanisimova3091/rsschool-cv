@@ -8,7 +8,7 @@ body {
   margin: 0 auto;
   border-radius: 7px;
   text-align: center;
-  background-color: rgba(241, 239, 116, 0.959);
+  background-color: rgba(245, 243, 153, 0.959);
   padding: 15px;
 }
 
@@ -19,6 +19,16 @@ body {
   background-color: hsl(0, 100%, 50%);
   position: relative;
   top: 67px;
+}
+
+pre {
+  text-align: left;
+  background-color: #eee;
+  color: #000;
+  margin: 0 auto;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
 }
 
 #class-name {
@@ -32,10 +42,19 @@ body {
 img {
   width: 328px;
   height: 398px;
+  border-radius: 7px;
 }
 
 class-name {
   color: white;
+}
+
+footer {
+  margin-top: 5px;
+  margin-bottom: -5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 p {
@@ -44,6 +63,26 @@ p {
   animation-duration: 2s;
   text-transform: capitalize;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  border: 3px solid #f02d9f;
+  border-radius: 7px;
+  padding: 5px;
+  background-color: khaki;
+  color: blue;
+}
+
+a:hover {
+  background-color: blue;
+  color: khaki;
+}
+
+.rss-logo {
+  width: 100px;
+  height: 60px;
+  background: url('https://rs.school/images/rs_school_js.svg') no-repeat;
 }
 
 span {
