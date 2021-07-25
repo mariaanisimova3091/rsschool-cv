@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-			<figure>
-				<figcaption></figcaption>
-      <img src="./photo.jpg" alt="owner photo" />
-		</figcaption>
-		</figure>
-      <h1>Maria Anisimova</h1>
+    <main class="container">
+        <img src="./photo_2.jpg" alt="owner photo" />
+      <header>
+        <h1>MARIA ANISIMOVA</h1>
+      </header>
       <h2>Contacts:</h2>
       <ul>
         <li>+375 44 460 06 06</li>
         <li>muza08a@gmail.com</li>
       </ul>
-			
+
       <h2>Brief information about yourself:</h2>
       <p>
         more than 10 years of experience as an accountant. Responsible. I am on
@@ -31,15 +29,17 @@
       <ul>
         <li>Knowledge of accounting</li>
         <li>
-          I am currently studing at Javascript / Frontend course. STAGE 0 (RS
-          SCHOOL).
+          I am currently studing at Javascript / Frontend course. STAGE 0 
+          <strong>
+            (RS SCHOOL)
+          </strong>
         </li>
       </ul>
 
       <h2>Code examples:</h2>
-			<figure>
-				<figcaption>Server with Express</figcaption>
-				<pre>
+      <figure>
+        <figcaption>Server with Express</figcaption>
+        <pre>
 					<code>
   const express = require('express')
   const app = express()
@@ -54,11 +54,11 @@
   })			
 					</code>
 				</pre>
-			</figure>
+      </figure>
 
-			<figure>
-				<figcaption>Redux-thunk</figcaption>
-				<pre>
+      <figure>
+        <figcaption>Redux-thunk</figcaption>
+        <pre>
 					<code>
   function createThunkMiddleware(args) {
     return ({ dispatch, getState }) => next => action => {
@@ -71,7 +71,7 @@
   }
 					</code>
 				</pre>
-			</figure>
+      </figure>
 
       <h2>Work experience:</h2>
       <p>no.</p>
@@ -83,15 +83,13 @@
       </p>
 
       <h2>English level:</h2>
-      <p>B1 (Intermediate)</p>
-    </div>
-		<footer>
-			<div class='rss-logo'></div>
-			<a href="https://rs.school/js/">Link to course Rolling Scopes School </a>
-			<a href="https://github.com/mariaanisimova3091"> My github </a>
-			<b>Creation date:2021 </b>
-		</footer>
- </body>
- 
-
+      <p>B1 (<mark>Intermediate</mark>)</p>
+    <footer>
+      <div class="rss-logo"></div>
+      <a href="https://rs.school/js/">Link to course Rolling Scopes School </a>
+      <a href="https://github.com/mariaanisimova3091"> My github </a>
+      <strong>Creation date:2021 </strong>
+    </footer>
+    </main>
+  </body>
 </html>
