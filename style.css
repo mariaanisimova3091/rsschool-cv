@@ -1,12 +1,21 @@
 body {
   background: rgba(240, 160, 209, 0.644);
   color: rgb(85, 85, 85);
+  background-size: 100%;
+  /* // это добавила растягивает на весь экран фон */
+  /* text-align: center; */
+  /* // это добавила */
 }
 
 h1 {
   border: 10px dotted rgba(240, 160, 209, 0.644);
   font-size: 55px;
   animation: to-white 3s infinite;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }
 
 .container {
@@ -65,7 +74,12 @@ a:hover {
 .rss-logo {
   width: 100px;
   height: 60px;
-  background: url("https://rs.school/images/rs_school_js.svg") no-repeat;
+  background: url('https://rs.school/images/rs_school_js.svg') no-repeat;
+}
+
+.list-container {
+  margin: 0 auto;
+  width: 400px;
 }
 
 span {
@@ -86,5 +100,28 @@ span {
 
   100% {
     color: black;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: purple;
+  }
+
+  img {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+  }
+
+  h1 {
+    border: 10px dotted rgba(240, 160, 209, 0.644);
+    font-size: 42px;
+    animation: to-white 3s infinite;
+    text-align: center;
+  }
+
+  .list-container {
+    width: 300px;
   }
 }
