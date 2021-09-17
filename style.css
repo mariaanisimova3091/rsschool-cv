@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: purple !important;
+  background-color: rgb(240, 160, 209) !important;
   color: rgb(85, 85, 85);
   background-size: 100%;
 }
