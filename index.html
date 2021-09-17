@@ -12,6 +12,12 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/go.min.js"></script>
   </head>
   <body>
     <main class="container">
@@ -20,7 +26,6 @@
         style="background-color: purple"
       >
         <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
           <button
             class="navbar-toggler"
             type="button"
@@ -54,7 +59,7 @@
         </div>
       </nav>
 
-      <img src="./photo_2.jpg" alt="owner photo" />
+      <img src="./img/photo_2.jpg" alt="owner photo" />
       <header>
         <h1>MARIA ANISIMOVA</h1>
       </header>
@@ -87,40 +92,37 @@
 
       <h2>Code examples:</h2>
       <figure>
-        <figcaption>Server with Express</figcaption>
-        <pre>
-					<code>
-  const express = require('express')
-  const app = express()
-  const port = 3000
+        <figcaption>
+          <h6>Set data to localStorage in Whack-A-Mole</h6>
+        </figcaption>
+        <pre> 
+					<code class="javascript">
+  // localStorage
+  const playerName = document.querySelector('.name');
+  playerName.value = `${localStorage.getItem('name') || 'Enter your name'}`;
 
-  app.get('/', (req, res) => {
-	  res.send('Hello World!')
-  })
-
-  app.listen(port, () => {
-	  console.log(`Example app listening at http://localhost:${port}`)
-  })			
+  playerName.addEventListener('change', e => {
+    localStorage.setItem('name', e.target.value);
+  });
 					</code>
 				</pre>
       </figure>
 
-      <!-- <figure>
-        <figcaption>Redux-thunk</figcaption>
-        <pre>
+      <figure>
+        <figcaption>
+          <h6>Check is number odd or even</h6>
+        </figcaption>
+        <pre class="language-javascript">
 					<code>
-  function createThunkMiddleware(args) {
-    return ({ dispatch, getState }) => next => action => {
-      if (typeof action === 'function') {
-        return action(dispatch, getState, args);
-      }
-
-      return next(action);	
-    };
+  function name(num) {
+    if (num % 2 === 0) {
+      return 'это четное число';
+    }
+    return 'число нечетное';
   }
 					</code>
 				</pre>
-      </figure> -->
+      </figure>
 
       <h2>My projects:</h2>
       <div class="list-container-card">
@@ -198,10 +200,8 @@
       </footer>
     </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </body>
 </html>
