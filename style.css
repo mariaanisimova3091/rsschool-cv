@@ -1,12 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background: rgba(240, 160, 209, 0.644);
+  background-color: rgb(240, 160, 209) !important;
   color: rgb(85, 85, 85);
+  background-size: 100%;
 }
 
 h1 {
   border: 10px dotted rgba(240, 160, 209, 0.644);
   font-size: 55px;
   animation: to-white 3s infinite;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  background-color: purple;
+  margin: 0 auto !important;
 }
 
 .container {
@@ -19,6 +33,23 @@ h1 {
   padding: 15px;
 }
 
+.nav-link {
+  margin: 10px 50px;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  margin: 0 50px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
 pre {
   text-align: left;
   background-color: rgba(245, 225, 240, 0.5);
@@ -27,6 +58,7 @@ pre {
   border: 1px solid #999;
   display: block;
   padding: 20px;
+  overflow: hidden !important;
 }
 
 img {
@@ -44,7 +76,6 @@ footer {
 }
 
 p {
-  text-transform: capitalize;
   text-align: center;
 }
 
@@ -65,14 +96,41 @@ a:hover {
 .rss-logo {
   width: 100px;
   height: 60px;
-  background: url("https://rs.school/images/rs_school_js.svg") no-repeat;
+  background: url('https://rs.school/images/rs_school_js.svg') no-repeat;
 }
 
-span {
+.list-container {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.navbar-toggler-icon {
   font-family: sans-serif;
   font-weight: 700;
   font-size: 60px;
   border: 10px dotted rgba(240, 160, 209, 0.644);
+}
+
+.card-img-top {
+  border-radius: 7px;
+  height: 210px;
+}
+
+.list-container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 320px;
+  height: 400px;
+  margin: 20px;
+  transition: all ease 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 @keyframes to-white {
@@ -86,5 +144,33 @@ span {
 
   100% {
     color: black;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: purple;
+  }
+
+  img {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+  }
+
+  h1 {
+    border: 10px dotted rgba(240, 160, 209, 0.644);
+    font-size: 42px;
+    animation: to-white 3s infinite;
+    text-align: center;
+  }
+
+  .list-container {
+    width: 300px;
+  }
+
+  .card {
+    width: 300px;
+    height: 420px;
   }
 }
