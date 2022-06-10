@@ -13,7 +13,10 @@ h1 {
   animation: to-white 3s infinite;
   text-align: center;
 }
-
+ul {
+  list-style-type: none;
+  /* display: inline; */
+}
 h2 {
   text-align: center;
 }
@@ -87,16 +90,26 @@ a {
   background-color: khaki;
   color: rgb(85, 85, 85);
 }
-
-a:hover {
+.rss-logo-link {
+  border-radius: 0;
+  border: 0px solid #fffcfe;
+  width: 100px;
+  height: 26px;
+  background-color: khaki;
+}
+rss-logo-link:hover {
   background-color: rgb(229, 197, 208);
+}
+a:hover {
   color: rgb(85, 85, 85);
+  border-color: rgb(229, 197, 208);
 }
 
 .rss-logo {
+  text-decoration: none;
   width: 100px;
   height: 60px;
-  background: url('https://rs.school/images/rs_school_js.svg') no-repeat;
+  background: url(./img/logo.svg) no-repeat;
 }
 
 .list-container {
