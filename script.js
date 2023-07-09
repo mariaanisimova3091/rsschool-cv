@@ -25,10 +25,11 @@ CurrentDate.textContent = 'Creation date: ' + year;
 console.log('Сurrent date: ' + day + ' ' + months[now.getMonth()] + ' ' + year);
 
 console.log(`
+Все вопросы возникающие в ходе проверки можно задать в телеграмм @Muza08
+
 Самооценка: 120/120.
  
 Отзыв по пунктам ТЗ:
-
 Выполненные пункты:
     -студент засабмитил в rs app ссылку на своё CV, задеплоенное на gh-pages +10
     -вёрстка валидная +10
